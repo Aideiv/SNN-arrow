@@ -1,5 +1,11 @@
-# FRED dataset (large binary events/frames) - downloaded separately
-data/
+# FRED raw event streams: unreadable without the proprietary
+# Prophesee/Metavision HDF5 filter plugin; several exceed GitHub's 100 MB
+# per-file limit. The training pipeline uses the rendered Event/Frames PNGs.
+data/fred/extracted/**/Event/events.hdf5
+data/fred/extracted/**/Event/events.raw.tmp_index
+
+# HuggingFace download cache (metadata/lock stubs only)
+data/fred/.cache/
 
 # Python
 __pycache__/
