@@ -1,0 +1,11 @@
+# FRED dataset (large binary events/frames) - downloaded separately
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
